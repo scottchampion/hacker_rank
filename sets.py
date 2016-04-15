@@ -2,7 +2,7 @@ def get_int():
 	"""Prompts user for a single integer and converts to a set"""
 	while True:
 		try:
-			#print "Enter an integer:"
+			print "Enter an integer:"
 			x = int(raw_input())
 			break
 		except:
@@ -13,7 +13,7 @@ def get_set():
 	"""Prompts user for set of integers and converts to a set"""
 	while True:
 		try:
-			#print "Enter a set of integers:"
+			print "Enter a set of integers:"
 			string_in = raw_input().split()
 			int_in = map(int, string_in)
 			break

@@ -21,6 +21,7 @@ def get_fibo(X):
 
 	return set(fibo_vals)
 
+
 # Prompt user for input
 input_vals = []
 nums = get_int()
@@ -28,8 +29,10 @@ for i in range(nums):
 	n = get_int()
 	input_vals.append(n)
 
+
 # Create a set of fibonacci numbers
 X = get_fibo(max(input_vals))
+
 
 # Return IsFibo for each input_val that is in the fibonacci sequence
 for i in input_vals:
