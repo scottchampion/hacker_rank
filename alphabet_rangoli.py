@@ -1,24 +1,22 @@
 
 def get_line(line, N):
+	"""Return a list of characters for a given line of a rangoli of size N""""
 	L = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
 	line_str = []
-	y = 0
+	y = 0			# This is super-hacky, but works; clean-up later 
 	for x in range(N):
 		if x < N - line - 1:
-			#print '-'
 			line_str.append('-')
 		else:
-			#print L[x]
 			line_str.append(L[N - y - 1])
-			y += 1
-			
+			y += 1	
 
 	output = list(line_str)
 	line_str.pop()
 	line_str.reverse()
 	return output + line_str
 
-#print get_line(2, 5)
 
 def print_rangoli(start, N):
 	"""Print a rangoli of size 'N' starting from line 'start' """
