@@ -1,7 +1,7 @@
 S = raw_input()
 L = ""
 
-# Seems like a poor implementation, but this method does not strip space chars
+# Seems like a weak implementation, but this method does not strip space chars
 for char in range(len(S)):
 	if char == 0:
 		L = L + S[char].upper()
