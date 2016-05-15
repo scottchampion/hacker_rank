@@ -10,5 +10,5 @@ b = raw_input()
 # Get the b space-separated role numbers of French subscriber students
 sub_fr = set(map(int, raw_input().split()))
 
-# Print the length of the union of sub_en and sub_fr
-print len(sub_en | sub_fr)
+# Print the length of the intersection of sub_en and sub_fr
+print len(sub_en & sub_fr)
