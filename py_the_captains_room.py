@@ -14,3 +14,4 @@ for i in occupied_rooms_set:
 	except:
 		# unable to remove i from room_assignments twice. found captain's room
 		print i
+		break
