@@ -4,6 +4,6 @@ from cmath import phase
 A = raw_input().replace('-', '+-').lstrip('+').replace('++', '+')
 A = map(int, A.strip('j').split('+'))
 
-# Print A
+# print A
 print abs(complex(A[0], A[1]))
 print phase(complex(A[0], A[1]))
