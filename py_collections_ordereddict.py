@@ -7,5 +7,7 @@ for i in range(int(raw_input())):
 	try: day_sales[item_name] += int(net_price)
 	except: day_sales[item_name] = int(net_price)
 
-for item_name, total_sales in day_sales.iteritems():
-	print item_name, total_sales
+#for item_name, total_sales in day_sales.iteritems():
+#	print item_name, total_sales
+for item_name in day_sales:
+	print item_name, day_sales[item_name]
