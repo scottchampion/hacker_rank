@@ -9,6 +9,9 @@ for s in S:
 
 
 #####################
+# This feels like a weak sorting method, but appears to work
+#####################
+
 Out = character_counter.most_common(3)
 Sorted_Out = []
 
